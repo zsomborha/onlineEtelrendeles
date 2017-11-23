@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <link rel="order-list.component.css" href="order-list.component.css" type="text/css">
+  <meta charset="UTF-8" />
+  <title>Fooldal</title>
+</head>
+<body>
+
+<h2>
+  Személyzeti oldal
+</h2>
+<p>Az alábbi listában láthatók a teljesítésre váró ételek.</p>
+<table>
+  <thead>
+  <tr>
+    <th>Étel</th>
+    <th>Rendelés dátuma</th>
+    <th>Állapot</th>
+    <!--<th></th>-->
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let order of orders">
+    <!--<td>{{food.id}}</td>-->
+    <td>{{order.food_id}}</td>
+    <td>{{order.date}}</td>
+    <td>{{order.status}}</td>
+    <td>
+      <input
+        type="button"
+        value="Állapot módosítás"
+        (click)="modifyStatus(order.id);"
+      >
+      <!-- <button [routerLink]="'/issue-details/' + issue.id">Show Issue</button> -->
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<input
+  type="button"
+  value="Kilépés"
+  (click)="Logout();"
+>
+
+</body>
+</html>

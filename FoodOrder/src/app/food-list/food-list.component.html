@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <link rel="food-list.component.css" href="food-list.component.css" type="text/css">
+  <meta charset="UTF-8" />
+  <title>Fooldal</title>
+</head>
+<body>
+
+<h2>
+  Megrendelő oldal
+</h2>
+<p>Válasszon az alábbi étleink közül,majd kattintson a megrendelés gombra!</p>
+<table>
+  <thead>
+  <tr>
+    <th>Név</th>
+    <th>Kategória</th>
+    <th>Ár</th>
+    <!--<th></th>-->
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let food of foods">
+    <!--<td>{{food.id}}</td>-->
+    <td>{{food.name}}</td>
+    <td>{{food.category}}</td>
+    <td>{{food.price}}</td>
+    <td>
+      <input
+        type="button"
+        value="Megrendel"
+        (click)="createOrder(food.id);"
+      >
+     <!-- <button [routerLink]="'/issue-details/' + issue.id">Show Issue</button> -->
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<input
+  type="button"
+  value="Kilépés"
+  (click)="Logout();"
+>
+
+</body>
+</html>

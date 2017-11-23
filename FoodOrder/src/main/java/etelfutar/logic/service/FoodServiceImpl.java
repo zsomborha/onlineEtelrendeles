@@ -19,6 +19,10 @@ public class FoodServiceImpl implements FoodService {
        return foodRepository.findAll();
    }
 
+  public Food findOne(int id) {
+    return foodRepository.findOne(id);
+  }
+
 
         public void save(Food food){
             if (food.getName().length()!=0

@@ -9,16 +9,16 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "STAFF")
+@Table(name = "staff")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class Staff extends BaseEntity {
-
+/*
     @Column(nullable = false)
     private int staff_id;
-
+*/
     @Column(nullable = false)
     private String name;
 
@@ -27,7 +27,7 @@ public class Staff extends BaseEntity {
 
     @Column(nullable = false)
     private String password;
-
+/*
     public int getStaff_id() {
         return staff_id;
     }
@@ -35,7 +35,7 @@ public class Staff extends BaseEntity {
     public void setStaff_id(int staff_id) {
         this.staff_id = staff_id;
     }
-
+*/
     public String getName() {
         return name;
     }

@@ -1,0 +1,24 @@
+/*
+body {
+  background-image: url("./hatter1.jpg");
+
+  background-size: contain;
+  background-size: cover;
+  background-size: 100% auto;
+  padding:20px;
+
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-color: #00FFFF;
+}
+*/
+
+
+h1
+{
+  font-size :400%;
+  color:blue;
+  text-align: center;
+  font-family: sans-serif;
+}

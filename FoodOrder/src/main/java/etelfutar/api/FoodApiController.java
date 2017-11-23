@@ -21,8 +21,8 @@ public class FoodApiController {
     @Autowired
     private OrderService orderService;
 
-    @GetMapping
-    @PreAuthorize("hasAnyAuthority('FOOD_LIST')")
+    /*@GetMapping
+    //@PreAuthorize("hasAnyAuthority('FOOD_LIST')")
     public ResponseEntity<Iterable<Food>> list() {
             return ResponseEntity.ok( foodService.findAll());
             }
@@ -31,13 +31,13 @@ public class FoodApiController {
 
 
     @GetMapping
-    @PreAuthorize("hasAnyAuthority('ORDER_LIST')")
+    //@PreAuthorize("hasAnyAuthority('ORDER_LIST')")
         public ResponseEntity<Iterable<Order>> list(){
             return ResponseEntity.ok( orderService.findAll());
-        }
+        }*/
 
     @PostMapping("/create")
-    @PreAuthorize("hasAuthority('STAFF_NEW_FOOD')")
+    //@PreAuthorize("hasAuthority('STAFF_NEW_FOOD')")
     public ResponseEntity create(@RequestBody Food food){
             foodService.save(food);
             return ResponseEntity.ok().build();

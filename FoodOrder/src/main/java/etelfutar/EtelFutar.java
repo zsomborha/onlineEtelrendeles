@@ -10,13 +10,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @SpringBootApplication
 public class EtelFutar extends WebMvcConfigurerAdapter  {
 
-    @Autowired
-    private HandlerInterceptor authInterceptor;
+    //@Autowired
+    //private HandlerInterceptor authInterceptor;
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(authInterceptor);
-    }
+    //@Override
+    //public void addInterceptors(InterceptorRegistry registry) {
+    //    registry.addInterceptor(authInterceptor);
+    //}
 
     /*@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Entity
-@Table(name = "User")
+@Table(name = "user")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -74,17 +74,16 @@ public class User extends BaseEntity {
         this.tel = tel;
     }
 
-    public Order getOrder() {
-        return order;
-    }
+    //public Order getOrder() {
+    //    return order;
+    //}
 
-    public void setOrder(Order order) {
-        this.order = order;
-    }
+    //public void setOrder(Order order) {
+     //   this.order = order;
+    //}
 
-    @OneToMany
-    @JoinColumn(name = "USER_ID")
-    private Order order;
+    @OneToMany(mappedBy="user")
+    private List<Order> order;
 
 
 }

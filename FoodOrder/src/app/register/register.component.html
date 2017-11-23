@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <link rel="register.component.css" href="register.component.css" type="text/css">
+  <meta charset="UTF-8" />
+  <title>Fooldal</title>
+</head>
+<body>
+
+<form #form="ngForm" (submit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Felhasználónév:</label>
+    <input type="text" placeholder="Név"
+           required pattern="\d \d"
+           name="name" [(ngModel)]="model.name"
+           #location="ngModel" />
+    <div *ngIf="location.invalid && location.touched" >
+      <span *ngIf="location.errors.required">Kötelező mező</span>
+      <span *ngIf="location.errors.pattern">PC-vel kell kezdődnie</span>
+    </div>
+  </div>
+
+  <div class="form-group"></div>
+    <label for="email">E-mail</label>
+    <input type="email" placeholder="E-mail"
+           name="email" [ngModel]="model.email"
+           #location="ngModel"
+           />
+
+
+  <div class="form-group"></div>
+  <label for="password">Jelszó</label>
+  <input type="password" placeholder="Jelszó"
+         name="password" [ngModel]="model.password"
+         #location="ngModel"
+  />
+
+
+  <div class="form-group"></div>
+  <label for="addres">Cím</label>
+  <input type="text" placeholder="Jelszó"
+         name="addres" [ngModel]="model.addres"
+         #location="ngModel"
+  />
+
+
+  <div class="form-group"></div>
+  <label for="tel">Telefonszám</label>
+  <input type="tel" placeholder="Tel"
+         name="tel" [ngModel]="model.tel"
+         #location="ngModel"
+  />
+
+<div>
+  <input id="gomb1" type="submit" value="Regisztráció">
+  <button id="gomb2" (click)="navigateToPreviousPage()">Vissza</button>
+</div>
+
+</form>
+</body>
+</html>
+
+
+
+
+  <!--
+    <div class="form-group">
+      <label for="description">Leírás:</label>
+      <textarea placeholder="rossz a projektor"
+                name="description"
+                [(ngModel)]="model.description">
+      </textarea>
+    </div>
+    <input type="submit" value="Mentés" />
+  </form>
+
+  <p>
+    register works!
+
+  </p>
+-->

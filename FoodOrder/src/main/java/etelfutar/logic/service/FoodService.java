@@ -7,5 +7,7 @@ public interface FoodService {
 
     Iterable<Food> findAll();
 
+    Food findOne(int id);
+
     void save(Food food);
 }

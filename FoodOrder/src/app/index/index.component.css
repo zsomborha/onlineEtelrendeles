@@ -1,0 +1,35 @@
+/*
+.button-bar
+{
+  background-color: antiquewhite;
+}
+*/
+
+
+#gomb1
+{
+  background-color: blanchedalmond;
+
+  height:50px;
+  width:130px;
+  top:50%;
+  left:50%;
+  font-size:200%;
+  right:400px;
+  margin: 20px 50px;
+}
+
+#gomb2
+{
+   background-color: blanchedalmond;
+
+  height:50px;
+  width:200px;
+  top:50%;
+  left:50%;
+  font-size:200%;
+  right:400px;
+  margin: 20px 50px;
+
+}
+

@@ -1,4 +1,4 @@
-package etelfutar.logic.config;
+/*package etelfutar.logic.config;
 
 import etelfutar.logic.service.LogService;
 import etelfutar.logic.service.UserService;
@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import etelfutar.logic.model.User;
-import etelfutar.logic.service.SecurityService;
+//import etelfutar.logic.service.SecurityService;
 import etelfutar.logic.annotations.Authenticated;
 import etelfutar.logic.annotations.NotAuthenticated;
-import etelfutar.logic.annotations.Role;
+//import etelfutar.logic.annotations.Role;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,7 +21,7 @@ import java.util.List;
 
 @Component
 public class AuthInterceptor extends HandlerInterceptorAdapter {
-/*
+
     @Autowired
     private UserService userService;
 
@@ -54,9 +54,10 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 
 
 
-    */
+
 
 
 
 
 }
+*/
